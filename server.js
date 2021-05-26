@@ -19,7 +19,7 @@ mongoose.connect(
       useCreateIndex: true,
       useFindAndModify: false
     }
-  );
+  ).then(()=> console.log('connected'));
 app.use(require('./controllers/homeRoutes'))
 app.use(require('./controllers/api/workoutRoutes'))
 app.listen(PORT,function(){
