@@ -9,8 +9,8 @@ const workoutSchema = new Schema (
     },
     type: {
         type: String,
-        enum:["Cardio", "Weights","Resistance"],
-        required:"Please select Cardio, Weights or Resistance "
+        enum:["cardio","resistance"],
+        required:"Please select Cardio or Resistance "
     },
     name: {
         type: String,

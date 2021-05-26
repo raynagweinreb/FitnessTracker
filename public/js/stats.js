@@ -15,6 +15,13 @@ function calculateTotalWeight(data) {
   return totals;
 }
 
+fetch("api/workouts/range")
+.then(response=> {
+  return response.json
+}).then(data =>{
+  populateChart(data)
+})
+
 function populateChart(data) {
   const durations = data.map(({ totalDuration }) => totalDuration);
   const pounds = calculateTotalWeight(data);
