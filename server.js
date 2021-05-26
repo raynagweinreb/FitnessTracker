@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/peaceful-thicket-58145',
+    process.env.MONGODB_URI || 'mongodb://localhost/peaceful-thicket',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
